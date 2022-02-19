@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./game.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./game.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header">
+      <section class="timer"><span id="timer">0min 0s</span></section>
+      <section class="actions">
+        <button id="start-btn" class="btn btn--primary">Start</button>
+        <button id="reset-btn" class="btn btn--secondary">Restart</button>
+      </section>
+    </header>
+    <ul id="deck" class="deck"></ul>
+    <section id="modal" class="modal">
+      <div class="modal-content col-1rem">
+        <span id="modal-close" class="close">&times;</span>
+        <div class="modal-info">
+          <h2 id="endgame">Thank you for playing, NAME!</h2>
+          <p class="score-info">
+            Completion time: <span id="score">0min 0s</span>
+          </p>
+          <div class="modal-btns col-1rem">
+            <button id="modal-restart" class="btn btn--primary">
+              Play again
+            </button>
+            <button id="modal-leaderboard" class="btn btn--secondary">
+              Leaderboard
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
